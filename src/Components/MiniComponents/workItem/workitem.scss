@@ -1,0 +1,33 @@
+@import "../../../vars";
+
+.work-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 10px;
+    width: 260px;
+    text-align: center;
+
+    .work-item-title{
+        h1{
+            font: {
+                size: 24px;
+                weight: 700;
+            }
+            
+            margin: {
+                top: 24px;
+                bottom: 16px;
+            }
+
+            color: #000;
+            
+        }
+        p{
+            font-size: 14px;
+            color: $black;
+        }
+    }
+}

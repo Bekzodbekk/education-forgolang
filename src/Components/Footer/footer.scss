@@ -1,0 +1,90 @@
+@import "../../vars";
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D3E5FE;
+    padding: 60px 144px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        &>* {
+            height: 100%;
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-top: 5px;
+                    a {
+                        color: #555;
+                        text-decoration: none;
+                        transition: .1s linear;
+
+                        &:hover{
+                            color: $blue;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        .education-contact {
+            width: 360px;
+
+            .btn-contact{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                & > *{
+                    background-color: #fff;
+                    padding: 14px;
+                    border-radius: 4px;
+                }
+            }
+        }
+        h1{
+            margin: 10px 0;
+        }
+        p{
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .feature {
+            width: 210px;
+        }
+
+        .support {
+            width: 120px;
+        }
+
+        .contact-us {
+            width: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1068px){
+    .footer{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 670px){
+    .footer{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

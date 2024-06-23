@@ -1,0 +1,134 @@
+@import "../../vars";
+
+.future-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: {
+        top: 180px;
+        bottom: 100px;
+    }
+
+    .future-title {
+        width: 500px;
+
+        padding: {
+            right: 40px;
+            bottom: 30px;
+        }
+
+        h1 {
+            font: {
+                weight: 700;
+                size: 48px;
+            }
+
+            color: #000;
+        }
+
+        p {
+            margin: {
+                top: 24px;
+                bottom: 16px;
+            }
+
+            font-size: 16px;
+            color: $black;
+        }
+
+        h4 {
+            color: $black;
+            font-size: 20px;
+        }
+
+        button {
+            padding: 16px 32px;
+            border-radius: 4px;
+            border: 2px solid $blue;
+            background: $blue;
+            color: #fff;
+            margin-top: 32px;
+            cursor: pointer;
+            transition: .1s linear;
+
+            &:hover {
+                background: transparent;
+                color: $blue;
+            }
+
+            font: {
+                size: 16px;
+                weight: 500;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1111px) {
+    .future-con {
+        .future-title {
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1039px) {
+    .future-con {
+        flex-direction: column;
+
+        .future-title {
+            text-align: center;
+            padding-right: 0;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 961px) {
+    .future-con {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 613px) {
+    .future-con {
+        .future-title {
+            width: 80%;
+
+        }
+
+        .future-image {
+            img {
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 504px) {
+    .future-con {
+        .future-title {
+
+            // width: 60%;
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+}

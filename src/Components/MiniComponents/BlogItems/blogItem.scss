@@ -1,0 +1,35 @@
+@import "../../../vars";
+
+.blogItem-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-box-shadow: 13px 9px 13px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 13px 9px 13px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 13px 9px 13px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 370px;
+    
+    .blog-info {
+        padding: 30px;
+
+        h1 {
+            font: {
+                size: 20px;
+                weight: 500;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: #444;
+            padding: {
+                top: 16px;
+                bottom: 24px;
+            };
+        }
+    }
+}

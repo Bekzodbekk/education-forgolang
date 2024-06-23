@@ -1,0 +1,34 @@
+@import "../../vars";
+
+.mentor-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    
+
+    .mentor-title{
+        @include FontTitle(60%);
+        text-align: center;
+        margin: 30px 0;
+    }
+    .mentor-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        & > *{
+            flex-basis: 200;
+        }
+
+        &:hover{
+            transform: scale(100%);
+        }
+        &:hover > :not(:hover){
+            opacity: 0.4;
+        }
+    }
+}

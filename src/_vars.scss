@@ -1,0 +1,21 @@
+$blue: #086CF9;
+$black: #333333;
+$background: #ECF4FF;
+$statisBackground: #D3E5FE;
+
+
+
+@mixin FontTitle ($width){
+    width: $width;
+    h1{
+        font: {
+            size: 48px;
+            weight: 700;
+        }
+        color: #000;
+    }
+    p{
+        font-size: 16px;
+        color: $black;
+    }
+}

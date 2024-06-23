@@ -1,0 +1,26 @@
+@import "../../vars";
+
+.studentSay-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .studentSay-title{
+        @include FontTitle(50%);
+        text-align: center;
+    }
+
+    .studentSay-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 50px 0;
+        flex-wrap: wrap;
+
+        & > *{
+            flex-basis: 200;
+        }
+    }
+}
